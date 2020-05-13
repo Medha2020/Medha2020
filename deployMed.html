@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<title>Medicine Side Effects Review</title>
+ <style>
+body{
+background:#F3F7BA;
+}
+input{
+padding:5px;
+margin-top:20px;
+font-size:18px;
+font-family:AR JULIAN;
+border:none;
+}
+input[type=submit]{
+width:20%;
+margin-left:250px;
+background:#111B5D;
+color:white;
+border:none;
+padding:10px;
+border-radius:5px
+}
+</style>
+</head>
+
+<body>
+ <div style ="width:1050px;height:100px;border:solid thin;margin:0px auto;"> 
+	<div style ="width:150px;height:100px;border:solid thin;float:left;">
+	<img src="excelr.png" style = "width:150px;height:100px;float:left">
+	 </div>
+	<div style ="width:900px;height:100px;border:solid thin;margin-left:150px;">
+	<br/>
+	<div style = "text-align:center;font-size:50px;font-family:arial black;text-shadow:5px 5px #7A10BD;">
+	Medicine Side Effects Predictor
+	</div>
+	</div>
+
+</div> 
+
+<div style = "text-align:left;font-size:10px;font-family:arial black;">
+<h1>Enter Review for prediction</h1>
+</div>
+<form action="{{url_for('predict')}}" method="POST">
+  <textarea name = "review" rows = "10" cols="100" align="right"></textarea><br><br>
+  <input type="submit" value="Predict" >
+</form>
+
+<br><br><br><br><br> <br> 
+<div style = "text-align:left;font-size:12px;font-family:arial black;">
+Project Details
+</div>
+<div style = "text-align:left;font-size:10px;font-family:arial;">
+<div style ="width:1050px;height:60px;border:solid thin;"> 
+Medicine Side Effects Prediction<br>
+Project by Team 2 ExcelR , Pune Batch : May 2020 <br>
+Team 2 : Medha / Pratap / Rasool / Sowmya / Joseph<br>
+Algorithm Used: Random Forest<br>
+Technique Used: Count Vectorizer and TFIDF
+</div>
+</div>
+
+
+
+</body>
+
+
+</html>
