@@ -1,2 +1,2 @@
-# Medha2020
+# MedicineSideEffects
 My first repository on github 2020
